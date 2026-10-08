@@ -107,3 +107,16 @@ footer a { color: var(--muted); }
 .brand { color: #fff; -webkit-text-stroke: 1px #000; paint-order: stroke fill; text-shadow: 2px 2px 0 #000; font-size: 20px; letter-spacing: .14em; }
 .hero h1 { color: #fff; -webkit-text-stroke: 2.5px #000; paint-order: stroke fill; text-shadow: 4px 4px 0 #000; letter-spacing: .01em; }
 @media (prefers-color-scheme: light) { .hero h1 { text-shadow: 4px 4px 0 #000; } }
+
+/* Site palette: light graphite grey background in every mode */
+:root, :root:is(*) {
+  --bg: #C9CBCF; --panel: #E3E4E7; --panel2: #D6D8DB; --line: #A3A7AD; --line-hi: #878B92;
+  --fg: #16171A; --muted: #4A4D53; --shadow: #1B1C1F;
+  --blue: #2E6FD8; --coral: #D9443A; --peacock: #136F7E; --gold: #8E6408;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #C9CBCF; --panel: #E3E4E7; --panel2: #D6D8DB; --line: #A3A7AD; --line-hi: #878B92;
+    --fg: #16171A; --muted: #4A4D53; --shadow: #1B1C1F; --blue: #2E6FD8; --coral: #D9443A; --peacock: #136F7E; --gold: #8E6408; color-scheme: light; }
+}
+body { background-color: var(--bg); }
