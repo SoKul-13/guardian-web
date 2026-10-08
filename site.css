@@ -108,15 +108,17 @@ footer a { color: var(--muted); }
 .hero h1 { color: #fff; -webkit-text-stroke: 2.5px #000; paint-order: stroke fill; text-shadow: 4px 4px 0 #000; letter-spacing: .01em; }
 @media (prefers-color-scheme: light) { .hero h1 { text-shadow: 4px 4px 0 #000; } }
 
-/* Site palette: light graphite grey background in every mode */
+/* Site palette: gunmetal grey on dark graphite, in every mode */
 :root, :root:is(*) {
-  --bg: #C9CBCF; --panel: #E3E4E7; --panel2: #D6D8DB; --line: #A3A7AD; --line-hi: #878B92;
-  --fg: #16171A; --muted: #4A4D53; --shadow: #1B1C1F;
-  --blue: #2E6FD8; --coral: #D9443A; --peacock: #136F7E; --gold: #8E6408;
-  color-scheme: light;
+  --bg: #17191C; --panel: #24272C; --panel2: #2D3137; --line: #3B4048; --line-hi: #545A64;
+  --fg: #E6E7E9; --muted: #A2A7AF; --shadow: #050506;
+  --blue: #3D85F0; --coral: #FF6F5E; --peacock: #2BA9BC; --gold: #E8B94F;
+  color-scheme: dark;
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #C9CBCF; --panel: #E3E4E7; --panel2: #D6D8DB; --line: #A3A7AD; --line-hi: #878B92;
-    --fg: #16171A; --muted: #4A4D53; --shadow: #1B1C1F; --blue: #2E6FD8; --coral: #D9443A; --peacock: #136F7E; --gold: #8E6408; color-scheme: light; }
+@media (prefers-color-scheme: light) {
+  :root { --bg: #17191C; --panel: #24272C; --panel2: #2D3137; --line: #3B4048; --line-hi: #545A64;
+    --fg: #E6E7E9; --muted: #A2A7AF; --shadow: #050506; --blue: #3D85F0; --coral: #FF6F5E; --peacock: #2BA9BC; --gold: #E8B94F; color-scheme: dark; }
+  h1 { text-shadow: 3px 3px 0 var(--shadow), 0 0 24px color-mix(in srgb, var(--blue) 35%, transparent); }
+  .hero h1 { text-shadow: 4px 4px 0 #000; }
 }
 body { background-color: var(--bg); }
