@@ -1,0 +1,7 @@
+# GitHub Pages settings for Guardian's public website (served from the repo root).
+title: Guardian
+description: A private AI command center that runs on your own computer.
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+exclude: [README.md]

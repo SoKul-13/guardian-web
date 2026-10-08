@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guardian · Your private AI command center</title>
+<meta name="description" content="Guardian is a private AI command center that runs on your own computer: a morning briefing, workouts, journal, notes and an assistant powered by a local AI model.">
+<link rel="icon" href="assets/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="./"><img src="assets/icon-64.png" alt="">Guardian</a>
+    <a href="#features">Features</a>
+    <a href="#install">Get it</a>
+    <a href="GOOGLE.html">Google setup</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Local-first · private beta</div>
+      <h1>Your private AI command center.</h1>
+      <p class="lead">Guardian runs on your own computer. Every morning it reads the news, research and data you care about,
+        ranks it against your goals with a local AI model, and plans your day. Your journal, workouts, notes and email
+        summaries never leave your machine.</p>
+      <div class="cta">
+        <a class="btn primary" href="#install">How to get it</a>
+        <a class="btn" href="https://github.com/SoKul-13/guardian-web/issues/new?title=Access%20request">Request access</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="assets/icon-512.png" alt="Guardian logo: a pixel-art eye inside a glowing ring">
+  </header>
+
+  <section id="features" aria-labelledby="f-h">
+    <h2 id="f-h">Everything in one place</h2>
+    <div class="grid">
+      <div class="card"><h3>Morning briefing</h3><p>AI papers and models, Hacker News, startup, tech, world and finance news, your watchlist, Codeforces, your commits and web research on your topics. Ranked against your goals, with a day plan.</p></div>
+      <div class="card"><h3>Workout</h3><p>A full calisthenics, weights, cardio and mobility program with logging, next-set targets, progress charts, a stick-figure sketch for every exercise, and home alternatives for gym gear you don't have.</p></div>
+      <div class="card"><h3>Journal</h3><p>Daily entries with mood, photos and drawings, plus an automatic snapshot of your day and a reflection written by your local model.</p></div>
+      <div class="card"><h3>Ask</h3><p>Chat with a local model that can search the web, read pages, call APIs and check your own briefing, calendar, workouts and notes.</p></div>
+      <div class="card"><h3>Notes, routine, library</h3><p>Keep-style notes, a daily habit checklist, and your books, podcasts, videos and study resources, all searchable with ⌘K.</p></div>
+      <div class="card"><h3>Your Google, read-only</h3><p>Optionally bring in Calendar, Tasks, Gmail and Drive. Email is summarized on your computer, and nothing is sent to an AI service.</p></div>
+      <div class="card"><h3>On your phone</h3><p>Pair your phone once and add Guardian to its home screen. Your computer does the AI work; the phone is a private remote screen.</p></div>
+      <div class="card"><h3>Builds itself</h3><p>Describe a new feature and the local model writes it. You review the exact change before anything is kept, and every change can be undone.</p></div>
+    </div>
+  </section>
+
+  <section id="install" aria-labelledby="i-h">
+    <h2 id="i-h">Get Guardian</h2>
+    <p>Guardian is in <b>private beta</b>. The source code isn't public yet. To try it,
+      <a href="https://github.com/SoKul-13/guardian-web/issues/new?title=Access%20request">open an access request</a> and you'll be
+      invited to the repository.</p>
+    <p>Once you have access, installing takes one command on a Mac with Apple Silicon and 16 GB of memory or more
+      (32 GB recommended). It installs everything, picks an AI model that fits your Mac, and puts Guardian in your Applications folder.</p>
+    <p class="muted">Connecting Google is optional: <a href="GOOGLE.html">step-by-step guide</a>.</p>
+  </section>
+
+  <section aria-labelledby="p-h">
+    <h2 id="p-h">Private by design</h2>
+    <div class="grid">
+      <div class="card"><h3>No accounts, no servers</h3><p>Guardian has no backend. There's nothing to sign up for, and the developer never receives your data.</p></div>
+      <div class="card"><h3>Local AI</h3><p>The model runs through Ollama on your computer. Your questions and personal data are processed on your own hardware.</p></div>
+      <div class="card"><h3>You hold the keys</h3><p>Google access uses your own OAuth client, and its tokens are stored only on your computer. Backups go to your own private GitHub repo, and only if you turn them on.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Guardian contributors</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of service</a>
+    <a href="GOOGLE.html">Google setup</a>
+    <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

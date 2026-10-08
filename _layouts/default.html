@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guardian · {{ page.title | default: "Docs" }}</title>
+<link rel="icon" href="{{ '/assets/icon-64.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="{{ '/site.css' | relative_url }}">
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/icon-64.png' | relative_url }}" alt="">Guardian</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/GOOGLE.html' | relative_url }}">Google setup</a>
+    <a href="{{ '/privacy.html' | relative_url }}">Privacy</a>
+    <a href="{{ '/terms.html' | relative_url }}">Terms</a>
+    <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
+  </nav>
+  <main class="doc md">{{ content }}</main>
+  <footer>
+    <span>© 2026 Guardian contributors</span>
+    <a href="{{ '/privacy.html' | relative_url }}">Privacy policy</a>
+    <a href="{{ '/terms.html' | relative_url }}">Terms of service</a>
+    <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
