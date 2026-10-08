@@ -6,26 +6,28 @@
 <title>Guardian · {{ page.title | default: "Docs" }}</title>
 <link rel="icon" href="{{ '/assets/icon-64.png' | relative_url }}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Silkscreen:wght@700&display=swap">
 <link rel="stylesheet" href="{{ '/site.css' | relative_url }}">
 </head>
 <body>
-<div class="wrap">
-  <nav class="nav" aria-label="Main">
+<div class="nav-bar">
+  <nav class="wrap nav" aria-label="Main">
     <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/icon-64.png' | relative_url }}" alt="">Guardian</a>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/GOOGLE.html' | relative_url }}">Google setup</a>
-    <a href="{{ '/privacy.html' | relative_url }}">Privacy</a>
-    <a href="{{ '/terms.html' | relative_url }}">Terms</a>
-    <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
+    <a class="hide-sm" href="{{ '/' | relative_url }}#features">Features</a>
+    <a class="hide-sm" href="{{ '/privacy.html' | relative_url }}">Privacy</a>
+    <a class="hide-sm" href="{{ '/GOOGLE.html' | relative_url }}" aria-current="page">Google setup</a>
+    <a class="pill" href="{{ '/' | relative_url }}#get">Get Guardian</a>
   </nav>
+</div>
   <main class="doc md">{{ content }}</main>
   <footer>
+  <div class="wrap">
     <span>© 2026 Guardian contributors</span>
     <a href="{{ '/privacy.html' | relative_url }}">Privacy policy</a>
     <a href="{{ '/terms.html' | relative_url }}">Terms of service</a>
+    <a href="{{ '/GOOGLE.html' | relative_url }}">Google setup</a>
     <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
-  </footer>
-</div>
+  </div>
+</footer>
 </body>
 </html>

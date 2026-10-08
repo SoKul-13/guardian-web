@@ -5,78 +5,99 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guardian · Your private AI command center</title>
 <meta name="description" content="Guardian is a private AI command center that runs on your own computer: a morning briefing, workouts, journal, notes and an assistant powered by a local AI model.">
+<meta name="theme-color" content="#121315">
 <link rel="icon" href="assets/icon-64.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Silkscreen:wght@700&display=swap">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div class="wrap">
-  <nav class="nav" aria-label="Main">
+<div class="nav-bar">
+  <nav class="wrap nav" aria-label="Main">
     <a class="brand" href="./"><img src="assets/icon-64.png" alt="">Guardian</a>
-    <a href="#features">Features</a>
-    <a href="#install">Get it</a>
-    <a href="GOOGLE.html">Google setup</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-    <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
+    <a class="hide-sm" href="#features">Features</a>
+    <a class="hide-sm" href="#privacy">Privacy</a>
+    <a class="hide-sm" href="GOOGLE.html">Google setup</a>
+    <a class="pill" href="#get">Get Guardian</a>
   </nav>
+</div>
 
-  <header class="hero">
-    <div>
-      <div class="eyebrow">Local-first · private beta</div>
-      <h1>Your private AI command center.</h1>
-      <p class="lead">Guardian runs on your own computer. Every morning it reads the news, research and data you care about,
-        ranks it against your goals with a local AI model, and plans your day. Your journal, workouts, notes and email
-        summaries never leave your machine.</p>
-      <div class="cta">
-        <a class="btn primary" href="#install">How to get it</a>
+<main>
+  <section class="hero wrap">
+    <div class="eyebrow">Private beta</div>
+    <h1 class="display">Your private AI command center.</h1>
+    <p class="sub">A morning briefing, your workouts, journal and notes, and an assistant. All running on your own computer.</p>
+    <div class="actions">
+      <a class="btn" href="#get">Request access</a>
+      <a class="link-arrow" href="#features">See what it does</a>
+    </div>
+    <img class="hero-art" src="assets/icon-512.png" alt="Guardian logo: a pixel-art eye inside a glowing ring">
+  </section>
+
+  <section class="wrap center reveal" aria-labelledby="brief-h">
+    <div class="eyebrow">Morning briefing</div>
+    <h2 id="brief-h" class="headline">Your morning, briefed.</h2>
+    <p class="sub">Papers, models, news, markets, your calendar and your code. Ranked against your goals by a local AI, with a plan for the day.</p>
+    <div class="preview" role="img" aria-label="Example of Guardian's Today screen showing three priorities and status chips">
+      <div class="preview-head"><b>Today</b><span>Example · Briefing ready 7:00 AM</span></div>
+      <ol class="top3">
+        <li>Finish the problem set due Thursday, starting with question 3.</li>
+        <li>Pull day: work on explosive chest-to-bar pull-ups.</li>
+        <li>Solve one Codeforces problem just above your rating.</li>
+      </ol>
+      <div class="chips"><span><b>Pull</b> · 0% done</span><span><b>Lecture</b> · 10:00 AM</span><span><b>3 unread</b> · Gmail</span><span><b>4-day</b> streak</span></div>
+    </div>
+  </section>
+
+  <section id="features" class="wrap center" aria-labelledby="f-h">
+    <div class="reveal">
+      <div class="eyebrow">Everything in one place</div>
+      <h2 id="f-h" class="headline">One app for the whole day.</h2>
+    </div>
+    <div class="bento">
+      <div class="tile wide glow-blue reveal"><div class="k blue">Workout</div><h3>Train like it's your job.</h3><p>Calisthenics, weights, cardio and mobility. Log every set, get your next target, and see a sketch of every movement. No gym? It switches to home alternatives.</p><div class="big">120 exercises</div></div>
+      <div class="tile wide reveal"><div class="k coral">Journal</div><h3>A running log of your life.</h3><p>Write, add photos and drawings, and Guardian attaches a snapshot of your day: workout, priorities, code and markets.</p><div class="big">Every day</div></div>
+      <div class="tile reveal"><div class="k peacock">Ask</div><h3>An assistant with tools.</h3><p>It searches the web, reads pages, calls APIs and checks your own data.</p></div>
+      <div class="tile reveal"><div class="k gold">Notes &amp; library</div><h3>Find anything with ⌘K.</h3><p>Notes, books, podcasts and videos, with search across everything.</p></div>
+      <div class="tile glow-coral reveal"><div class="k blue">Phone</div><h3>In your pocket.</h3><p>Pair once and add it to your home screen. Your computer does the AI work.</p></div>
+      <div class="tile full reveal"><div class="k coral">Builds itself</div><h3>Describe a feature. Review it. Keep it.</h3><p>The local model can add sources and cards to Guardian. You see the exact change first, and any change can be undone.</p></div>
+    </div>
+  </section>
+
+  <section id="privacy" class="wrap center" aria-labelledby="p-h">
+    <div class="reveal">
+      <div class="eyebrow">Privacy</div>
+      <h2 id="p-h" class="headline">Your data stays yours.</h2>
+      <p class="sub">Guardian has no servers and no accounts. There's nothing for anyone else to see.</p>
+    </div>
+    <div class="statements">
+      <div class="reveal"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h3>AI on your computer.</h3><p>The model runs locally. Your journal, notes, workouts and email summaries are processed on your own hardware.</p></div>
+      <div class="reveal"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2L20 3M16 7l3 3M14 9l2 2"/></svg></div><h3>You hold the keys.</h3><p>Google connects with your own credentials, stored only on your computer. Read-only, except one spreadsheet Guardian creates.</p></div>
+      <div class="reveal"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Nothing to sell.</h3><p>No ads, no tracking, no data collection. Backups go to your own private GitHub, only if you turn them on.</p></div>
+    </div>
+  </section>
+
+  <section id="get" class="wrap reveal">
+    <div class="cta-box">
+      <div class="eyebrow">Private beta</div>
+      <h2 class="headline">Get Guardian.</h2>
+      <p class="sub">For Macs with Apple Silicon and 16 GB of memory or more. Request access and you'll be invited to the repository. Then it's one command to install.</p>
+      <div class="actions">
         <a class="btn" href="https://github.com/SoKul-13/guardian-web/issues/new?title=Access%20request">Request access</a>
+        <a class="link-arrow" href="GOOGLE.html">Google setup guide</a>
       </div>
     </div>
-    <img class="hero-logo" src="assets/icon-512.png" alt="Guardian logo: a pixel-art eye inside a glowing ring">
-  </header>
-
-  <section id="features" aria-labelledby="f-h">
-    <h2 id="f-h">Everything in one place</h2>
-    <div class="grid">
-      <div class="card"><h3>Morning briefing</h3><p>AI papers and models, Hacker News, startup, tech, world and finance news, your watchlist, Codeforces, your commits and web research on your topics. Ranked against your goals, with a day plan.</p></div>
-      <div class="card"><h3>Workout</h3><p>A full calisthenics, weights, cardio and mobility program with logging, next-set targets, progress charts, a stick-figure sketch for every exercise, and home alternatives for gym gear you don't have.</p></div>
-      <div class="card"><h3>Journal</h3><p>Daily entries with mood, photos and drawings, plus an automatic snapshot of your day and a reflection written by your local model.</p></div>
-      <div class="card"><h3>Ask</h3><p>Chat with a local model that can search the web, read pages, call APIs and check your own briefing, calendar, workouts and notes.</p></div>
-      <div class="card"><h3>Notes, routine, library</h3><p>Keep-style notes, a daily habit checklist, and your books, podcasts, videos and study resources, all searchable with ⌘K.</p></div>
-      <div class="card"><h3>Your Google, read-only</h3><p>Optionally bring in Calendar, Tasks, Gmail and Drive. Email is summarized on your computer, and nothing is sent to an AI service.</p></div>
-      <div class="card"><h3>On your phone</h3><p>Pair your phone once and add Guardian to its home screen. Your computer does the AI work; the phone is a private remote screen.</p></div>
-      <div class="card"><h3>Builds itself</h3><p>Describe a new feature and the local model writes it. You review the exact change before anything is kept, and every change can be undone.</p></div>
-    </div>
   </section>
+</main>
 
-  <section id="install" aria-labelledby="i-h">
-    <h2 id="i-h">Get Guardian</h2>
-    <p>Guardian is in <b>private beta</b>. The source code isn't public yet. To try it,
-      <a href="https://github.com/SoKul-13/guardian-web/issues/new?title=Access%20request">open an access request</a> and you'll be
-      invited to the repository.</p>
-    <p>Once you have access, installing takes one command on a Mac with Apple Silicon and 16 GB of memory or more
-      (32 GB recommended). It installs everything, picks an AI model that fits your Mac, and puts Guardian in your Applications folder.</p>
-    <p class="muted">Connecting Google is optional: <a href="GOOGLE.html">step-by-step guide</a>.</p>
-  </section>
-
-  <section aria-labelledby="p-h">
-    <h2 id="p-h">Private by design</h2>
-    <div class="grid">
-      <div class="card"><h3>No accounts, no servers</h3><p>Guardian has no backend. There's nothing to sign up for, and the developer never receives your data.</p></div>
-      <div class="card"><h3>Local AI</h3><p>The model runs through Ollama on your computer. Your questions and personal data are processed on your own hardware.</p></div>
-      <div class="card"><h3>You hold the keys</h3><p>Google access uses your own OAuth client, and its tokens are stored only on your computer. Backups go to your own private GitHub repo, and only if you turn them on.</p></div>
-    </div>
-  </section>
-
-  <footer>
+<footer>
+  <div class="wrap">
     <span>© 2026 Guardian contributors</span>
     <a href="privacy.html">Privacy policy</a>
     <a href="terms.html">Terms of service</a>
     <a href="GOOGLE.html">Google setup</a>
     <a href="https://github.com/SoKul-13/guardian-web">GitHub</a>
-  </footer>
-</div>
+  </div>
+</footer>
 </body>
 </html>
